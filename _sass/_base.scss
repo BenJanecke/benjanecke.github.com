@@ -1,0 +1,29 @@
+@import 'bootstrap';
+
+.default-text {
+  color: $text-color;
+}
+
+.site-title {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.site-header {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
+
+.site-nav {
+  a {
+    color: $text-color;
+  }
+  float: left;
+}
+
+.nav-item {
+  float: left;
+  padding-right: 10px;
+}
