@@ -199,10 +199,24 @@ getNames(undefined, (err, names) => {
   if (err) {
     // deal with the error
   } else {
+    // do something with names
+  }
+});
+
+getNames([{
+  "name": "Steve",
+  "age": 22
+}, {
+  "name": "Bob",
+  "age": 33
+}], (err, names) => {
+  if (err) {
+    // deal with the error
+  } else {
     try {
-      // do something with names
+      names.someUndefinedFunction();
     } catch (e) {
-      // deal with something that went wrong with names
+      console.log(e); // TypeError: [ "Steve", "Bob" ].someUndefinedFunction is not a function
     }
   }
 });
