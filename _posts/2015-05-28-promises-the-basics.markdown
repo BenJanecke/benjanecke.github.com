@@ -46,7 +46,7 @@ And turn it into this
   .then(display);
 {% endhighlight %}
 
-Pretty nice right.
+Pretty nice, right?
 
 Lets take a look at how we can create a promise.
 
