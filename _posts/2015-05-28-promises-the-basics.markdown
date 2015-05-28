@@ -89,7 +89,7 @@ There is a lot going on there so lets break it down.
 
 ### Resolve
 
-Resolve tells the promise that it is executed successfully
+Calling resolve tells the promise that it is executed successfully
 
 {% highlight javascript %}
 
