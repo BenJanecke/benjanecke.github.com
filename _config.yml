@@ -4,9 +4,9 @@ email: benjanecke@gmail.com
 description: >
   muppet, film fanatic, software designer.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
-
+url: "http://benjanecke.com" # the base hostname & protocol for your site
+twitter_username: BenJanecke
+github_username: BenJanecke
 # Build settings
 markdown: kramdown
+highlighter: pygments
