@@ -120,7 +120,7 @@ let fetchPeople = (done) => {
 
 ### Then
 
-Then is gets called when the promise is finished executing successfully.
+Then gets called when the promise is finished executing successfully.
 
 {% highlight javascript %}
 
