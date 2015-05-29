@@ -195,14 +195,6 @@ What's even worse is that if we want to do exception handling within the callbac
 
 {% highlight javascript %}
 
-getNames(undefined, (err, names) => {
-  if (err) {
-    // deal with the error
-  } else {
-    // do something with names
-  }
-});
-
 getNames([{
   "name": "Steve",
   "age": 22
