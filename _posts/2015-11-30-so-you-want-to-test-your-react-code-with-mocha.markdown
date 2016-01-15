@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "So you want to test your react code with mocha"
+title: "So you want to test your react code with mocha(updated)"
 date: 2015-11-30 15:45:38 +0200
 comments: true
 ---
@@ -126,6 +126,28 @@ describe('Testing a component', () => {
 {% endhighlight %}
 
 ### Compiling JSX to js for mocha
+
+## Update!
+
+Babel 6 has made this way simpler
+
+{% highlight javascript %}
+// simply run mocha with this require flag
+mocha  --require babel-core/register
+// or add this to mocha.opts
+--require babel-core/register
+{% endhighlight %}
+
+You will have to set the following in your .babelrc to enable jsx and es2015
+
+{% highlight javascript %}
+{
+  "presets": [ "es2015", "react" ]
+}
+{% endhighlight %}
+
+
+## Old way of doing it(keeping this here for posterity)
 
 Mocha has this concept of compilers, that was originally introduced to facilitate testing [Coffeescript](http://coffeescript.org/). We are going to use that and make it work for JSX by creating a compiler.js file that uses babel to do compilation.
 
